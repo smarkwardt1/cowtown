@@ -1,15 +1,58 @@
 ---
+import Header from "../components/header.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Cowtown Birthplace of Western Swing</title>
-	</head>
-	<body>
-		<h1>CBWS</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Cowtown Birthplace of Western Swing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <Header />
+    <h1>Cowtown - The Birthplace of Western Swing</h1>
+
+    <p>
+      Western Swing music is considered a hybrid subgenre of American Jazz,
+      Delta Blues and Frontier Fiddle music that originated nearly a century ago
+      in Fort Worth, Texas. It was developed between the years of 1929 to 1936
+      at primarily the Crystal Springs Dance Pavilion on White Settlement Road
+      just west of downtown Fort Worth. Thanks largely to the combined efforts
+      of early pioneers Milton Brown and Bob Wills, along with their
+      accompaniment of talented string band members, Western Swing was born out
+      of a desire to create dance music with an up-tempo beat, that attracted
+      huge crowds to Crystal Springs and soon spreading to many other dance
+      halls throughout Texas, Oklahoma, Louisiana and eventually California
+      during the 1930s and 1940s, until a federal war-time dancehall tax in 1945
+      contributed to the genre's decline.
+    </p><p>
+      The highly contagious music was an outgrowth of Jazz, combined with an
+      amalgamation of Frontier Fiddle, Bohemian Polka, American Folk, Dixieland
+      Jazz, Delta Blues, Mexican Mariachi and Cajun Waltz -- wrapped in a
+      homegrown Texas Swing dance beat; and played by a hot string band
+      augmented with twin fiddles, mandolins, guitars, drums, brass horns &
+      clarinets, piano and, most notably, the amplified steel guitar, which gave
+      the music it's most distinctive sound.
+    </p>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
