@@ -1,6 +1,7 @@
 ---
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
+import Modals from "../components/boardModals.astro";
 ---
 
 <!DOCTYPE html>
@@ -10,7 +11,7 @@ import Footer from "../components/footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <title>CBWS | Board</title>
+    <title>CBWS | The Legends</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,12 +29,71 @@ import Footer from "../components/footer.astro";
   <body>
     <Header />
 
-    <div
-      class="container bg-dark d-flex flex-wrap "
-    >
-    <p>board</p>
+    <div class="container bg-dark d-flex flex-wrap">
+      <h3>The Board</h3>
+      <hr />
+      <p>
+        <i>
+          We the Founders and Board of Advisors of the Cowtown Birthplace of
+          Western Swing are dedicated to the promotion, preservation and
+          heritage of this great genre that was pioneered and developed by the
+          Legends "King" Bob Wills and "Father" Milton Brown during their
+          formative years of 1929 to 1936 in Fort Worth "Cowtown" Texas. This
+          early development of what would become Western Swing is defined as a
+          musical melting pot that represents a diverse group of talented
+          musicians who contributed to the creation, growth and prosperity of
+          our beloved dance music and distinctive Western way of life that has
+          flourished here in Cowtown for well over a century, and is indeed a
+          fitting legacy for our rich cultural heritage that is shared by
+          everyone who loves Western Swing. We aim to grow the awareness and
+          love of this great music to a younger generation who can embrace the
+          genre and insure that it lives on for many decades to come. Lastly,
+          our end goal is to eventually build a Birthplace of Western Swing
+          Museum here in Fort Worth that showcases the many past Legends of
+          Western Swing.
+        </i>
+      </p>
+      <hr />
+      <div class="container bg-dark">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 gallery-grid">
+            <img
+              src="/images/board/MikeMarkwardt_Board.png"
+              alt="Mike Markwardt"
+              class="img-fluid gallery-img"
+              data-toggle="modal"
+              data-target="#myModal"
+            />
+            <p class="gallery-title">Mike Markwardt</p>
+          </div>
+          <div class="col-md-3 col-sm-6 gallery-grid">
+            <img
+              src="/images/board/MichaelMurphey_Board.png"
+              alt="Michael Murphey"
+              class="img-fluid gallery-img"
+            />
+            <p class="gallery-title">Michael Murphey</p>
+          </div>
+          <div class="col-md-3 col-sm-6 gallery-grid">
+            <img
+              src="/images/board/PaulaJungmann_Board.png"
+              alt="Paula Jungmann"
+              class="img-fluid gallery-img"
+            />
+            <p class="gallery-title">Paula Jungmann</p>
+          </div>
+          <div class="col-md-3 col-sm-6 gallery-grid">
+            <img
+              src="/images/board/BillyBowles_Board.png"
+              alt="BillyBowles"
+              class="img-fluid gallery-img"
+            />
+            <p class="gallery-title">BillyBowles</p>
+          </div>
+          <!-- Add more columns as needed -->
+        </div>
+      </div>
     </div>
-
     <Footer />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script
@@ -47,5 +107,26 @@ import Footer from "../components/footer.astro";
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal Title</h5>
+            <button type="button" class="close" data-dismiss="modal"
+              >&times;</button
+            >
+          </div>
+          <div class="modal-body">
+            <p>This is the modal content.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+              >Close</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

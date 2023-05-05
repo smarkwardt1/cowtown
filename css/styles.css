@@ -29,18 +29,18 @@ hr {
   background-color: white; 
 }
 
-/* LEGENDS */
-.legends-grid {
+.gallery-grid {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.legends-img {
-  width: 500px;
+.gallery-img {
+  float: left;
+  width:  350px;
+  height: 250px;
+  object-fit: cover;
 }
 
-.legends-text {
-  padding-top: 10px;
+.gallery-title {
   text-align: center;
 }
-/* END LEGENDS */
