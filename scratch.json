@@ -1,0 +1,38 @@
+{
+  "scheduleJobInput": {
+    "name": "name",
+    "description": "description",
+    "case_type": "id",
+    "active": true,
+    "schedule_type": "RECURRING",
+    "recurring": {
+      "recurrence": "MONTHLY",
+      "monthly_recurrence": {
+        "frequency": 1,
+        "day_in_month": 1,
+        "nth_day_in_week": 1
+      },
+      "first_run": "",
+      "period_type": ""
+    },
+    "case_due_after_days": 2,
+    "case_information": {
+      "label": "{{ businessDev.label }}: Monthly Check-In",
+      "status": "open",
+      "case_type": "53a1a7bd27c55aef917ce852aeb707f5",
+      "assigned_role": "c3586834b0f35445be47334c0aa5e5e4",
+      "owner_user": "0b782b2fbda84bf58b2f5c11b0b706d8",
+      "priority": "high",
+      "due_date": "[days_after_create=5]",
+      "notes": [
+        {
+          "text": "<p>Review <strong></strong><a href=\\\"https://testing.fortoperatingsystem.com/app/entity/{{ businessDev.itemId }}\\\" target=\\\"_blank\\\"><strong>{{ businessDev.label }}</strong></a> information, previous contact notes, and check in with <a href=\\\"https://testing.fortoperatingsystem.com/app/entity/{{ businessDev.contactId }}\\\" target=\\\"_blank\\\"><strong>{{ businessDev.contactLabel }}</strong></a>. Discuss target properties and determine if they are willing to sell at this point. Update *Communication Notes* field based on conversation.</p>",
+          "user_ids": ["30d9f1fe3f154080beee2c49a56ba609"]
+        }
+      ]
+    },
+    "owner_user": "ID",
+    "owner_users": "",
+    "owner_roles": ""
+  }
+}

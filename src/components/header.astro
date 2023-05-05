@@ -1,49 +1,40 @@
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button
-        type="button"
-        class="navbar-toggle collapsed"
-        data-toggle="collapse"
-        data-target="#bs-example-navbar-collapse-1"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">CBWS</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="#">Home<span class="sr-only">(current)</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-        <li><a href="#">Festival</a></li>
-        <li><a href="#">Documentary</a></li>
-        <li><a href="#">Sponsors</a></li>
-        <li><a href="#">Board</a></li>
-        <li class="dropdown">
-          <a
-            href="#"
-            class="dropdown-toggle"
-            data-toggle="dropdown"
-            role="button"
-            aria-haspopup="true"
-            aria-expanded="false">History<span class="caret"></span></a
-          >
+        <li class="nav-item">
+          <a class="nav-link" href="/festival">Festival</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/documentary">Documentary</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            History
+          </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Dancehalls</a></li>
-            <li><a href="#">Legends</a></li>
-            <li><a href="#">Doughboys</a></li>
+            <li><a class="dropdown-item" href="#">The Birth</a></li>
+            <li><a class="dropdown-item" href="#">The Legends</a></li>
+            <li><a class="dropdown-item" href="#">The Dancehalls</a></li>
+            <li><a class="dropdown-item" href="#">The Doughboys</a></li>
           </ul>
         </li>
-        <li><a href="#">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sponsors">Sponsors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/board">Board</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/board">Contact</a>
+        </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
