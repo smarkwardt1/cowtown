@@ -28,10 +28,46 @@ import Footer from "../components/footer.astro";
   <body>
     <Header />
 
-    <div
-      class="container bg-dark d-flex flex-wrap "
-    >
-    <p>the legends</p>
+    <div class="container bg-dark d-flex flex-wrap">
+      <h3>The Legends</h3>
+      <hr />
+      <div class="container bg-dark">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 legends-grid">
+            <img
+              src="/images/legends/BobWills_Legends.png"
+              alt="Bob Wills"
+              class="img-fluid legends-img"
+            />
+            <p class="legends-text">Bob Wills</p>
+          </div>
+          <div class="col-md-3 col-sm-6 legends-grid">
+            <img
+              src="/images/legends/MiltonBrown_Legends.png"
+              alt="Milton Brown"
+              class="img-fluid legends-img"
+            />
+            <p class="legends-text">Milton Brown</p>
+          </div>
+          <div class="col-md-3 col-sm-6 legends-grid">
+            <img
+              src="/images/legends/TommyDuncan_Legends.png"
+              alt="Tommy Duncan"
+              class="img-fluid legends-img"
+            />
+            <p class="legends-text">Tommy Duncan</p>
+          </div>
+          <div class="col-md-3 col-sm-6 legends-grid">
+            <img
+              src="/images/legends/BobDunn_Legends.png"
+              alt="Tommy Duncan"
+              class="img-fluid legends-img"
+            />
+            <p class="legends-text">Bob Dunn</p>
+          </div>
+          <!-- Add more columns as needed -->
+        </div>
+      </div>
     </div>
 
     <Footer />

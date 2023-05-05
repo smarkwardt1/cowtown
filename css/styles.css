@@ -2,5 +2,47 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: white;
-  background-color: rgb(88, 79, 79);
+  background-color: rgb(65, 69, 82);
 }
+
+h3 {
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: white;
+  height: 2px;
+}
+
+.container {
+  padding: 30px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.navbar-toggler {
+  background-color: white; /* Change this to the desired color */
+}
+/* END GLOBALS */
+
+/* LEGENDS */
+.legends-grid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.legends-img {
+  width: 500px;
+}
+
+.legends-text {
+  padding-top: 10px;
+  text-align: center;
+}
+/* END LEGENDS */
