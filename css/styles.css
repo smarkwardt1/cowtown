@@ -39,6 +39,7 @@ hr {
   width:  350px;
   height: 250px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .gallery-title {
