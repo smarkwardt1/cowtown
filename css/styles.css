@@ -1,11 +1,16 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: white;
-  background-color: rgb(65, 69, 82);
+  background-color: #212529;
 }
 
 h1 {
   font-weight: bold;
+}
+
+h2 {
+  font-size: large;
+  text-decoration: underline;
 }
 
 hr {
