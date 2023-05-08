@@ -1,0 +1,22 @@
+---
+import board from "../../data/board.js";
+---
+
+<div class="container bg-dark">
+    <div class="row">
+      {
+        board.map((item) => (
+          <div class="col-md-3 col-sm-6 gallery-grid">
+            <img
+              src={item.image_src}
+              alt={item.name}
+              class="img-fluid gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target={item.modal_target}
+            />
+            <p class="gallery-title">{item.name}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>

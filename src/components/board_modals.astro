@@ -1,0 +1,49 @@
+---
+import board from "../../data/board.js";
+---
+
+{
+  board.map((item) => (
+    <div
+      class="modal"
+      id={item.modal_target.substring(1)}
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby={item.modal_target.substring(1) + "Label"}
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-black">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id={item.modal_target.substring(1) + "Label"}
+            >
+              {item.name}
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            />
+          </div>
+          <div class="modal-body">
+            <!-- UNCOMMENT TO INSERT PHOTOS <img src={item.image_src} alt={item.name} class="img-fluid" /> -->
+            <Fragment set:html={`${item.bio}`} />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  ))
+}

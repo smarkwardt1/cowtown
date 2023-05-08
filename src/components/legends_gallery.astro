@@ -1,0 +1,23 @@
+---
+import legends from "../../data/legends.js";
+---
+
+<div class="container bg-dark">
+  <div class="row">
+    {
+      legends.map((item) => (
+        <div class="col-md-3 col-sm-6 gallery-grid">
+          <a href={item.link}>
+            <img
+              src={item.image_src}
+              alt={item.name}
+              class="img-fluid gallery-img"
+            />
+          </a>
+
+          <p class="gallery-title">{item.name}</p>
+        </div>
+      ))
+    }
+  </div>
+</div>
