@@ -4,6 +4,13 @@ body {
   background-color: #212529;
 }
 
+.container {
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
 h1 {
   font-weight: bold;
 }
@@ -20,14 +27,6 @@ hr {
   width: 96%;
   background-color: white;
   height: 2px;
-}
-
-.container {
-  padding: 30px;
-  width: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
 }
 
 .navbar-toggler {
@@ -65,6 +64,43 @@ hr {
 
 .bi:hover {
   cursor: pointer;
+}
+
+.carousel-inner {
+  text-align: center;
+  
+}
+
+.purchase-tickets {
+  margin-top: 40px;
+}
+
+.tickets-card-container {
+  margin-top: 20px;
+}
+
+.tickets-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.tickets-card:hover {
+  transform: scale(1.02);
+}
+
+.card-title {
+  text-decoration: underline;
+}
+
+.ticket-price {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.carousel-item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {
