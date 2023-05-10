@@ -1,7 +1,7 @@
 ---
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-import '../../css/styles.css';
+import "../../css/styles.css";
 import BoardGallery from "../components/board_gallery.astro";
 import BoardModals from "../components/board_modals.astro";
 ---
@@ -26,36 +26,41 @@ import BoardModals from "../components/board_modals.astro";
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <Header />
-    <div class="container bg-black d-flex flex-wrap">
-      <h1>The Board</h1>
-      <hr />
-      <p>
-        <i>
-          We the Founders and Board of Advisors of the Cowtown Birthplace of
-          Western Swing are dedicated to the promotion, preservation and
-          heritage of this great genre that was pioneered and developed by the
-          Legends "King" Bob Wills and "Father" Milton Brown during their
-          formative years of 1929 to 1936 in Fort Worth "Cowtown" Texas. This
-          early development of what would become Western Swing is defined as a
-          musical melting pot that represents a diverse group of talented
-          musicians who contributed to the creation, growth and prosperity of
-          our beloved dance music and distinctive Western way of life that has
-          flourished here in Cowtown for well over a century, and is indeed a
-          fitting legacy for our rich cultural heritage that is shared by
-          everyone who loves Western Swing. We aim to grow the awareness and
-          love of this great music to a younger generation who can embrace the
-          genre and insure that it lives on for many decades to come. Lastly,
-          our end goal is to eventually build a Birthplace of Western Swing
-          Museum here in Fort Worth that showcases the many past Legends of
-          Western Swing.
-        </i>
-      </p>
-      <hr />
-      <BoardGallery />
+    <div class="container-fluid bg-black d-flex flex-wrap">
+      <div class="container-lg bg-black d-flex flex-wrap">
+        <h1>The Board</h1>
+        <hr />
+        <p>
+          <i>
+            We the Founders and Board of Advisors of the Cowtown Birthplace of
+            Western Swing are dedicated to the promotion, preservation and
+            heritage of this great genre that was pioneered and developed by the
+            Legends "King" Bob Wills and "Father" Milton Brown during their
+            formative years of 1929 to 1936 in Fort Worth "Cowtown" Texas. This
+            early development of what would become Western Swing is defined as a
+            musical melting pot that represents a diverse group of talented
+            musicians who contributed to the creation, growth and prosperity of
+            our beloved dance music and distinctive Western way of life that has
+            flourished here in Cowtown for well over a century, and is indeed a
+            fitting legacy for our rich cultural heritage that is shared by
+            everyone who loves Western Swing. We aim to grow the awareness and
+            love of this great music to a younger generation who can embrace the
+            genre and insure that it lives on for many decades to come. Lastly,
+            our end goal is to eventually build a Birthplace of Western Swing
+            Museum here in Fort Worth that showcases the many past Legends of
+            Western Swing.
+          </i>
+        </p>
+        <hr />
+        <BoardGallery />
+      </div>
     </div>
     <BoardModals />
     <Footer />

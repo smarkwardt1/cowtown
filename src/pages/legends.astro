@@ -2,7 +2,7 @@
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 import LegendsGallery from "../components/legends_gallery.astro";
-import '../../css/styles.css';
+import "../../css/styles.css";
 ---
 
 <!DOCTYPE html>
@@ -29,10 +29,12 @@ import '../../css/styles.css';
   <body>
     <Header />
 
-    <div class="container bg-black d-flex flex-wrap">
-      <h1>The Legends</h1>
-      <hr />
-      <LegendsGallery />
+    <div class="container-fluid bg-black d-flex flex-wrap">
+      <div class="container-lg bg-black d-flex flex-wrap">
+        <h1>The Legends</h1>
+        <hr />
+        <LegendsGallery />
+      </div>
     </div>
     <Footer />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

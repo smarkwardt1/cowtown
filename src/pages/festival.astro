@@ -1,9 +1,10 @@
 ---
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-import '../../css/styles.css';
+import "../../css/styles.css";
 import FestivalCarousel from "../components/festival_carousel.astro";
 import FestivalTickets from "../components/festival_tickets.astro";
+import FestivalInfo from "../components/festival_info.astro";
 ---
 
 <!DOCTYPE html>
@@ -29,13 +30,14 @@ import FestivalTickets from "../components/festival_tickets.astro";
   </head>
   <body>
     <Header />
-    <div
-      class="container bg-black d-flex flex-wrap "
-    >
-    <h1>Cowtown Birthplace of Western Swing Festival</h1>
-    <hr />
-    <FestivalCarousel />
-    <FestivalTickets />
+    <div class="container-fluid bg-black d-flex flex-wrap">
+      <div class="container-lg bg-black d-flex flex-wrap">
+        <h1>Cowtown Birthplace of Western Swing Festival</h1>
+        <hr />
+        <FestivalCarousel />
+        <FestivalTickets />
+        <FestivalInfo />
+      </div>
     </div>
 
     <Footer />

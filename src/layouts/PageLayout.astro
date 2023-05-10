@@ -29,8 +29,10 @@ const { frontmatter } = Astro.props;
   <body>
     <Header />
 
-    <div class="container bg-black d-flex flex-wrap">
-      <slot />
+    <div class="container-fluid bg-black d-flex flex-wrap">
+      <div class="container-lg bg-black d-flex flex-wrap">
+        <slot />
+      </div>
     </div>
     <Footer />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

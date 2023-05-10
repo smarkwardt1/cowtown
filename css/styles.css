@@ -1,10 +1,10 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: white;
-  background-color: #212529;
+  background-color: black;
 }
 
-.container {
+.container-lg {
   padding: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -29,8 +29,28 @@ hr {
   height: 2px;
 }
 
+.navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .navbar-toggler {
   background-color: white; 
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  background-color: black;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  text-decoration: underline;
+  background-color: black;
+  color: white;
 }
 
 .gallery-grid {
@@ -106,5 +126,10 @@ hr {
 @media (min-width: 768px) {
   .modal-dialog.wider {
     max-width: 1200px; 
+  }
+
+  .tickets-card-container {
+    width: 100%;
+    margin: 0 auto;
   }
 }
